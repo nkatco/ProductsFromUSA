@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Post Details</title>
+</head>
+<body>
+<a href="/admin">Назад</a>
+<h2>Post Details</h2>
+<div>
+  <img th:src="@{/admin/image/{postId}(postId=${post.id})}" alt="Image">
+  <p>ID: <span th:text="${post.id}"></span></p>
+  <p>Name: <span th:text="${post.name}"></span></p>
+  <p>Text: <span th:text="${post.text}"></span></p>
+  <p>Price: <span th:text="${post.price}"></span></p>
+  <p>User: <span th:text="${post.user != null ? post.user.name : 'N/A'}"></span></p>
+  <p>Category: <span th:text="${post.category != null ? post.category.name : 'N/A'}"></span></p>
+  <p>Creation Date: <span th:text="${post.creationDate}"></span></p>
+</div>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Add Post</title>
+</head>
+<body>
+<a href="/admin">Назад</a>
+<h2>Add Post</h2>
+<form id="postForm" action="/admin/add-post" method="post" enctype="multipart/form-data">
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name" required><br>
+
+    <label for="text">Text:</label><br>
+    <textarea id="text" name="text" required></textarea><br>
+
+    <label for="ref">Reference:</label><br>
+    <input type="text" id="ref" name="ref" required><br>
+
+    <label for="price">Price:</label><br>
+    <input type="text" id="price" name="price" required><br>
+
+    <label for="oldPrice">Old Price:</label><br>
+    <input type="text" id="oldPrice" name="oldPrice"><br>
+
+    <label for="image">Image:</label><br>
+    <input type="file" id="image" name="image" required><br>
+
+    <label for="category">Category:</label><br>
+    <select id="category" name="category" required>
+        <option value="">Select Category</option>
+        <option th:each="category : ${categories}" th:value="${category.id}" th:text="${category.name}"></option>
+    </select>
+    <a href="/admin/add-category">New Category</a><br>
+
+    <button type="submit" id="submitButton" disabled>Save</button>
+</form>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const form = document.getElementById("postForm");
+        const submitButton = document.getElementById("submitButton");
+
+        form.addEventListener("input", function() {
+            const inputs = form.querySelectorAll("input, textarea, select");
+            let isValid = true;
+
+            inputs.forEach(function(input) {
+                if (input.hasAttribute("required") && !input.checkValidity()) {
+                    isValid = false;
+                }
+            });
+
+            if (isValid) {
+                submitButton.removeAttribute("disabled");
+            } else {
+                submitButton.setAttribute("disabled", "disabled");
+            }
+        });
+    });
+</script>
+</body>
+</html>

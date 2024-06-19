@@ -1,0 +1,113 @@
+2024-05-30 10:51:45 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-30 10:51:45 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-05-30 10:51:46 WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-05-30 10:51:47 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 16 mappings in 'requestMappingHandlerMapping'
+2024-05-30 10:51:47 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-05-30 10:51:47 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-05-30 10:51:48 ERROR o.t.t.u.DefaultBotSession - Cannot invoke "Object.equals(Object)" because "o" is null
+java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because "o" is null
+	at java.base/java.util.ImmutableCollections$Map1.get(ImmutableCollections.java:1122)
+	at com.example.productsfromusa.handlers.PhoneHandler.handlePhone(PhoneHandler.java:35)
+	at com.example.productsfromusa.TelegramBot.onUpdateReceived(TelegramBot.java:203)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.telegram.telegrambots.meta.generics.LongPollingBot.onUpdatesReceived(LongPollingBot.java:27)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$HandlerThread.run(DefaultBotSession.java:312)
+2024-05-30 11:07:41 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-30 11:07:41 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-05-30 11:07:42 WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-05-30 11:07:42 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 16 mappings in 'requestMappingHandlerMapping'
+2024-05-30 11:07:42 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-05-30 11:07:42 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-05-30 11:21:21 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-30 11:21:21 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-05-30 11:21:22 WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-05-30 11:21:22 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 16 mappings in 'requestMappingHandlerMapping'
+2024-05-30 11:21:22 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-05-30 11:21:22 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-05-30 11:24:38 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-30 11:24:38 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-05-30 11:24:39 WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-05-30 11:24:40 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 16 mappings in 'requestMappingHandlerMapping'
+2024-05-30 11:24:40 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-05-30 11:24:40 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-05-30 13:41:52 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-30 13:41:52 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-05-30 13:41:54 WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-05-30 13:41:54 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 16 mappings in 'requestMappingHandlerMapping'
+2024-05-30 13:41:54 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-05-30 13:41:55 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-05-30 13:42:25 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-05-30 13:42:25 DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2024-05-30 13:42:25 DEBUG o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+2024-05-30 13:42:25 DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+2024-05-30 13:42:25 DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@4d248692
+2024-05-30 13:42:25 DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@1a262e93
+2024-05-30 13:42:25 DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-05-30 13:42:25 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2024-05-30 13:42:25 DEBUG o.s.web.servlet.DispatcherServlet - GET "/auth/login", parameters={}
+2024-05-30 13:42:25 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.productsfromusa.controllers.AuthenticationController#showLoginPage(Model)
+2024-05-30 13:42:25 DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2024-05-30 13:42:25 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2024-05-30 13:45:58 DEBUG o.s.web.servlet.DispatcherServlet - GET "/auth/signup", parameters={}
+2024-05-30 13:45:58 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.productsfromusa.controllers.AuthenticationController#showSignupPage(Model)
+2024-05-30 13:45:58 DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2024-05-30 13:45:58 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2024-05-30 13:46:03 DEBUG o.s.web.servlet.DispatcherServlet - POST "/auth/signup", parameters={masked}
+2024-05-30 13:46:03 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.productsfromusa.controllers.AuthenticationController#register(RegisterAdminDto, Model)
+2024-05-30 13:46:03 DEBUG o.s.web.servlet.view.RedirectView - View name 'redirect:', model {}
+2024-05-30 13:46:03 DEBUG o.s.web.servlet.DispatcherServlet - Completed 302 FOUND
+2024-05-30 13:46:03 DEBUG o.s.web.servlet.DispatcherServlet - GET "/auth/login", parameters={}
+2024-05-30 13:46:03 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.productsfromusa.controllers.AuthenticationController#showLoginPage(Model)
+2024-05-30 13:46:03 DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2024-05-30 13:46:03 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2024-05-30 13:46:06 DEBUG o.s.web.servlet.DispatcherServlet - POST "/auth/rest/login", parameters={}
+2024-05-30 13:46:06 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.productsfromusa.controllers.RestAuthenticationController#authenticate(LoginAdminDto, HttpServletResponse)
+2024-05-30 13:46:06 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [LoginAdminDto(fullName=admin, password=admin)]
+2024-05-30 13:46:06 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-05-30 13:46:06 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{token=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTcxNzA2MjM2NiwiZXhwIjoxNzE3MDY1OTY2fQ.ux6bG (truncated)...]
+2024-05-30 13:46:06 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2024-05-30 13:46:06 DEBUG o.s.web.servlet.DispatcherServlet - GET "/admin", parameters={}
+2024-05-30 13:46:06 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.productsfromusa.controllers.AdminController#showAdminPage(Model)
+2024-05-30 13:46:06 DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2024-05-30 13:46:06 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2024-05-30 13:46:08 DEBUG o.s.web.servlet.DispatcherServlet - GET "/admin/add-post", parameters={}
+2024-05-30 13:46:08 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.productsfromusa.controllers.AdminController#showAddPostPage(Model)
+2024-05-30 13:46:08 DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2024-05-30 13:46:08 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2024-05-30 13:46:09 DEBUG o.s.web.servlet.DispatcherServlet - GET "/admin/add-category", parameters={}
+2024-05-30 13:46:09 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.productsfromusa.controllers.AdminController#showAddCategoryPage(Model)
+2024-05-30 13:46:09 DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2024-05-30 13:46:09 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2024-05-30 13:46:12 DEBUG o.s.web.servlet.DispatcherServlet - POST "/admin/add-category", parameters={masked}
+2024-05-30 13:46:12 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.productsfromusa.controllers.AdminController#addCategory(String)
+2024-05-30 13:46:12 DEBUG o.s.web.servlet.view.RedirectView - View name 'redirect:', model {}
+2024-05-30 13:46:12 DEBUG o.s.web.servlet.DispatcherServlet - Completed 302 FOUND
+2024-05-30 13:46:12 DEBUG o.s.web.servlet.DispatcherServlet - GET "/admin", parameters={}
+2024-05-30 13:46:12 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.productsfromusa.controllers.AdminController#showAdminPage(Model)
+2024-05-30 13:46:12 DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2024-05-30 13:46:12 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2024-05-30 13:46:13 DEBUG o.s.web.servlet.DispatcherServlet - GET "/admin/add-post", parameters={}
+2024-05-30 13:46:13 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.productsfromusa.controllers.AdminController#showAddPostPage(Model)
+2024-05-30 13:46:13 DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2024-05-30 13:46:13 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2024-05-30 13:46:36 DEBUG o.s.web.servlet.DispatcherServlet - POST "/admin/add-post", parameters={multipart}
+2024-05-30 13:46:36 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.productsfromusa.controllers.AdminController#addPost(String, String, String, String, String, MultipartFile, String)
+2024-05-30 13:46:36 DEBUG o.s.web.servlet.view.RedirectView - View name 'redirect:', model {}
+2024-05-30 13:46:36 DEBUG o.s.web.servlet.DispatcherServlet - Completed 302 FOUND
+2024-05-30 13:46:36 DEBUG o.s.web.servlet.DispatcherServlet - GET "/admin", parameters={}
+2024-05-30 13:46:36 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.productsfromusa.controllers.AdminController#showAdminPage(Model)
+2024-05-30 13:46:36 DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2024-05-30 13:46:36 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2024-05-30 13:46:39 DEBUG o.s.web.servlet.DispatcherServlet - GET "/admin/post/9282021f-a42b-4bb8-b5f3-afa3d874daf3", parameters={}
+2024-05-30 13:46:39 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.productsfromusa.controllers.AdminController#showPostDetails(String, Model)
+2024-05-30 13:46:39 DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2024-05-30 13:46:39 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2024-05-30 13:46:39 DEBUG o.s.web.servlet.DispatcherServlet - GET "/admin/image/9282021f-a42b-4bb8-b5f3-afa3d874daf3", parameters={}
+2024-05-30 13:46:39 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.productsfromusa.controllers.RestAdminController#getImage(String)
+2024-05-30 13:46:39 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'image/avif', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [*/*, application/json, application/*+json]
+2024-05-30 13:46:39 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [Byte array resource [resource loaded from byte array]]
+2024-05-30 13:46:39 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2024-05-30 13:46:41 DEBUG o.s.web.servlet.DispatcherServlet - GET "/admin", parameters={}
+2024-05-30 13:46:41 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.productsfromusa.controllers.AdminController#showAdminPage(Model)
+2024-05-30 13:46:41 DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2024-05-30 13:46:41 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK

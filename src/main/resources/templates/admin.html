@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Page</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 8px;
+            border: 1px solid #dddddd;
+            text-align: left;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            max-width: 150px;
+        }
+    </style>
+</head>
+<body>
+<h2>Products From USA</h2>
+<div>
+    <ul>
+        <li><a href="/admin">Posts</a></li>
+        <li><a href="/admin/users">Users</a></li>
+        <li><a href="/admin/tools">Tools</a></li>
+    </ul>
+</div>
+<div>
+    <a href="/admin/add-post"><button>New Post</button></a>
+    <table>
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Number</th>
+            <th>Name</th>
+            <th>Text</th>
+            <th>User</th>
+            <th>Category</th>
+            <th>Creation Date</th>
+            <th>Actions</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="post : ${posts}">
+            <td th:text="${post.id}"></td>
+            <td th:text="${post.number}"></td>
+            <td th:text="${post.name}"></td>
+            <td th:text="${post.text}"></td>
+            <td th:if="${post.user != null}" th:text="${post.user.name}"></td>
+            <td th:if="${post.user == null}">N/A</td>
+            <td th:text="${post.category != null ? post.category.name : 'N/A'}"></td>
+            <td th:text="${post.creationDate}"></td>
+            <td><a th:href="@{/admin/post/{id}(id=${post.id})}">Подробно</a></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>

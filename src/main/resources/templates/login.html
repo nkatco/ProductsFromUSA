@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Page</title>
+</head>
+<body>
+<h2>Login</h2>
+<form id="loginForm" action="/auth/rest/login" method="post">
+    <div>
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" name="fullName" required>
+    </div>
+    <div>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+    </div>
+    <div>
+        <button type="submit">Login</button>
+    </div>
+    <p id="error"></p>
+</form>
+<p>Don't have an account? <a href="/auth/signup">Sign up</a></p>
+
+<script>
+    // Function to delete all cookies
+    function deleteAllCookies() {
+        var cookies = document.cookie.split(";");
+
+        for (var i = 0; i < cookies.length; i++) {
+            var cookie = cookies[i];
+            var eqPos = cookie.indexOf("=");
+            var name = eqPos > -1 ? cookie.substr(0, eqPos) : cookie;
+            document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/";
+        }
+    }
+
+    // Delete all cookies when the page loads
+    window.onload = deleteAllCookies;
+
+    document.getElementById("loginForm").addEventListener("submit", function(event) {
+        event.preventDefault(); // Prevent the default form submission
+
+        // Create a FormData object to collect form data
+        var formData = new FormData(this);
+
+        // Convert form data to JSON object
+        var json = {};
+        formData.forEach(function(value, key) {
+            json[key] = value;
+        });
+
+        // Send form data to the server in JSON format
+        fetch('/auth/rest/login', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(json)
+        })
+            .then(response => response.json()) // Get response from the server in JSON format
+            .then(data => {
+                if (data.token) {
+                    // Set cookie with the token
+                    document.cookie = "jwtToken=" + data.token + "; path=/";
+                    // Redirect user to the admin page
+                    window.location.href = "/admin";
+                } else {
+                    // Display error message if authentication fails
+                    document.getElementById("error").textContent = data.error;
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+    });
+</script>
+</body>
+</html>
