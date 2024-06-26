@@ -41,9 +41,9 @@ public class AddAnons5Callback implements CallbackHandler {
         long chatId = update.getCallbackQuery().getMessage().getChatId();
         SendMessage message = new SendMessage();
         message.setChatId(chatId);
+        User user = userService.getUserByTelegramId(update.getCallbackQuery().getFrom().getId());
+        String callbackData = update.getCallbackQuery().getData();
         try {
-            User user = userService.getUserByTelegramId(update.getCallbackQuery().getFrom().getId());
-            String callbackData = update.getCallbackQuery().getData();
             Token token1 = (Token) stateDataDAO.getStateDataByUserId("token_" + user.getId()).getData();
             String hour = (String) stateDataDAO.getStateDataByUserId("hour_" + user.getId()).getData();
             String minute = (String) stateDataDAO.getStateDataByUserId("minute_" + user.getId()).getData();
